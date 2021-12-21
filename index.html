@@ -1,1 +1,72 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <button class="highscore">View Highscores</button>
+        <div>Time: <span id="timer"></span></div>
+    </header>
+
+    <div class="wrapper">
+        <div id="content" class="jumbotron mx-auto">
+            <h3 class="display-4">Coding Quiz Challenge</h3>
+            <p class="lead">Test your code-related knowledge by answering the following questions before the timer runs
+                out. If you answer a question incorrectly 10 seconds will be deducted from the timer/score!</p>
+            <a class="btn btn-primary" href="#" role="button" id="start">Start Quiz</a>
+        </div>
+
+        <div id="questiondiv" class="jumbotron mx-auto">
+            <h3 id="question" class="display-5 text-left"></h3>
+            <div id="answer" class="text-center">
+            </div>
+            <hr />
+            <div id="result" class="text-left">
+            </div>
+        </div>
+
+        <div id="scorediv" class="jumbotron mx-auto">
+            <h3 class="display-5 text-left mb-4">All Done!</h3>
+            <p class="text-left">Your final score is: <span id="score"></span></p>
+            <form class="form-inline">
+                <label class="my-1 mr-2" for="user-initals">Enter Initials:</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="user-initals">
+                <button class="submit-button">Submit</button>
+            </form>
+        </div>
+
+        <div id="highscoresdiv" class="jumbotron mx-auto">
+            <h3 class="display-4 text-left">Highscores</h3>
+            <ol id="recorded-score" class="text-left"></ol>
+            <button id="back-button" class="btn btn-primary">Go Back</button>
+            <button id="clear-button" class="btn btn-primary">Clear Highscores</button>
+        </div>
+    
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
